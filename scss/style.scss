@@ -1,0 +1,469 @@
+// Main Sass File
+
+$dark-primary-color   : #455A64;
+$default-primary-color: #607D8B;
+$light-primary-color  : #CFD8DC;
+$text-primary-color   : #FFFFFF;
+$accent-color         : #009688;
+$primary-text-color   : #212121;
+$secondary-text-color : #757575;
+$divider-color        : #BDBDBD;
+
+$workRowColor: #619896;
+$principalColor: #619896;
+
+span {
+  white-space: nowrap;
+}
+
+// body { padding-top: 70px!important; }
+
+ .text-primary {
+       color: $text-primary-color  !important;
+ }
+//
+// font-family: 'Lato', sans-serif;
+
+// * {
+//   font-family: 'Lato', sans-serif!important;
+// }
+.navbar {
+  // opacity: 0.4;
+  // background: none;
+  .navbar-toggler-icon{
+    color: $light-primary-color!important;
+  }
+
+  .navbar-brand {
+      color: #619896;
+  }
+
+  .navbar-nav{
+    color: $divider-color;
+    .nav-item {
+      margin:0 10px;
+    }
+    .nav-item:hover a {
+      color: rgba($accent-color,0.7) !important;
+    }
+    .active a{
+      color: $accent-color !important;
+    }
+  }
+
+
+
+
+
+  border-bottom: 1px rgba($accent-color,0.1) solid;
+}
+
+
+
+section#landing {
+
+  .landingBackground{
+    background: url('../img/landing3.jpg');
+    background-size:cover;
+    background-position: center;
+    margin-top: 0vh;
+    height: 100vh;
+    // height: auto;
+    // width: 100hw;
+  }
+}
+
+section#about {
+
+    background: linear-gradient(rgba($primary-text-color,0.8), rgba($primary-text-color,0.4)),url('https://images.unsplash.com/photo-1476067897447-d0c5df27b5df?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max&s=8bcead9a8059ff3433e96c780d1b2143');
+    background-size: cover;
+    background-attachment: fixed;
+
+    color: $divider-color;
+
+    h2 {
+      color: $text-primary-color;
+    }
+
+    .intro {
+      letter-spacing: 0.06rem;
+      line-height: 1.8rem;
+    }
+    li{
+      display: inline-block;
+      padding: 0 2%;
+      font-size: 180%;
+
+      .fa{
+        color: $default-primary-color;
+        transition: color 0.2s, font-size 0.3s;
+      }
+
+      .fa:hover {
+        color:$divider-color ;
+        font-size: 2.1rem;
+      }
+    }
+
+}
+
+.navbar {
+  background-color: $primary-text-color !important;
+}
+section#portfolio {
+  background:  linear-gradient(rgba($dark-primary-color,0.9),rgba($primary-text-color,0.9)
+    ),url('../img/circuit2.png');
+  background-repeat: repeat;
+  position: relative;
+  img {
+    cursor: pointer;
+  }
+  h2 {
+    color: $light-primary-color;
+    letter-spacing: 0.2rem;
+  }
+  h5 {
+    color: $light-primary-color;
+  }
+
+  .work-row {
+    border-radius: 0.4rem;
+    background-color: rgba($dark-primary-color, 0.95);
+    color: $light-primary-color;
+
+    .content {
+      padding: 1% 3% 2% 3%;
+
+      .intro {
+        letter-spacing: 0.01rem;
+      }
+      .read-more {
+        font-size: 70%;
+        font-weight: bold;
+        cursor: pointer;
+        color: $primary-text-color;
+      }
+    }
+
+    .portfolioCard {
+        font-size: 0.9rem;
+        .title {
+          color: darken($light-primary-color,20);
+          font-weight: 600;
+        }
+        .detail {
+          text-align: justify;
+        }
+        .demo {
+          .detail {
+            a {
+              color: $accent-color;
+              padding-left: 0.5rem;
+              padding-right: 0.5rem;
+            }
+            a:hover{
+              font-weight: bold;
+              text-decoration: none;
+            }
+          }
+        }
+    }
+  }
+  .work-row:nth-child(even) {
+    background: rgba(darken($dark-primary-color,6),0.92);
+    color: $light-primary-color;
+}
+
+
+}
+
+section#resume {
+  color: $light-primary-color;
+  background-color: $dark-primary-color;
+  #downloadBtn {
+    color: $accent-color;
+    border-color: $accent-color;
+    font-size: 0.86rem;
+    letter-spacing: 0.019rem;
+  }
+  #downloadBtn:hover {
+    background: rgba($default-primary-color, 0.1);
+  }
+  #downloadBtn:focus {
+    outline: none;
+    background: rgba($default-primary-color, 0.1);
+    box-shadow: none;
+  }
+  h4 {
+    letter-spacing: 0.04rem;
+  }
+  .h6 {
+    letter-spacing: 0.04rem;
+  }
+  li {
+    letter-spacing: 0.04rem;
+  }
+  p {
+    margin: 0;
+  }
+
+    #leftSide {
+      #educationCard {
+        border-bottom: 1px solid rgba($default-primary-color,0.1);
+        #collegeCard {
+
+
+          p{
+            letter-spacing: 0.026rem;
+          }
+
+          .img-fluid {
+
+          }
+        }
+        #extraClassCard{
+
+          ul{
+            margin: 0;
+            li {
+              list-style: none;
+            }
+          }
+
+        }
+      }
+
+
+    #skillsetCard{
+
+      .skill-list{
+          padding: 0;
+          .progress {
+            border-radius: 0.1em;
+            margin-bottom: 4px;
+            background-color: darken($dark-primary-color,2%);
+            .progress-bar{
+                  justify-content: flex-end;
+                  padding-right: 9px;
+            }
+          }
+          .progress:nth-child(even) .progress-bar {
+              background-color: $default-primary-color;
+              color: rgba($light-primary-color, 0.6);
+            }
+
+
+            .progress:nth-child(odd) .progress-bar {
+                background-color: rgba($default-primary-color,0.5);
+                color: rgba($light-primary-color, 0.6);
+              }
+    }
+
+      #extraStuff {
+        li {
+          list-style: none;
+          display: inline-block;
+          padding-right: 0.7rem;
+        }
+      }
+    }
+
+    }
+
+
+      #work-experience {
+        padding-left: 0.4rem;
+        border-left: 1px rgba($divider-color,0.08) solid;
+        .job-card {
+          border: 1px solid rgba($default-primary-color,0.18);
+          border-radius: 0.3em;
+
+          .company {
+            letter-spacing: 0.08rem;
+            font-weight: 600;
+            font-size: 1.1rem;
+          }
+          .position {
+            font-size: 0.95rem;
+            letter-spacing: 0.05rem;
+          }
+          ul{
+            padding-left: 1rem;
+            margin-bottom: 0;
+              li {
+                list-style: none;
+                letter-spacing: 0.014rem;
+                padding-top: 0.2rem;
+              }
+          }
+        }
+      }
+}
+
+footer{
+  padding: 1% 0;
+  background-color: $primary-text-color;
+  color: $dark-primary-color;
+}
+
+section#contact {
+  background: linear-gradient(-90deg, rgba($dark-primary-color,0.77) 30%, rgba($primary-text-color, 0.63) 70%),
+  url('../img/contact-background.jpg');
+  background-attachment: fixed;
+  background-size: cover;
+  color: $divider-color;
+  .contact-form {
+
+    .form-control {
+      background-color: rgba($dark-primary-color, 0.9) !important;
+      color: $light-primary-color;
+      outline: none;
+      border: 0;
+    }
+
+    .form-control:focus,
+    .form-control:visited,
+    .form-control:hover,
+    .form-control:active {
+      border:0;
+      outline:none;
+      box-shadow:none;
+    }
+
+    .btn-primary {
+      background-color: darken(rgba($default-primary-color, 0.9),20);
+      border: none;
+    }
+    .btn-primary:hover {
+      cursor: pointer;
+      background-color: $accent-color;
+      border: none;
+    }
+  }
+
+  li {
+    list-style: none;
+    display: inline-block;
+    padding: 0.3rem;
+
+    .fa {
+      color: $light-primary-color;
+      font-size: 1.4rem;
+      transition: color 0.3s;
+    }
+
+    .fa:hover {
+      color: $accent-color;
+      font-size: 1.4rem;
+    }
+  }
+
+  .email a{
+    color: $light-primary-color;
+    transition: color 0.3s;
+  }
+  .email a:hover {
+    color: $accent-color;
+    text-decoration: none;
+  }
+}
+
+
+@media only screen and  (max-width: 767px) {
+  #resume {
+
+
+    #work-experience{
+      padding-top: 1rem !important;
+      border-top: 1px solid rgba($default-primary-color,0.1) !important;
+      border-left: none !important;
+    }
+  }
+
+  #portfolio {
+      #accordion {
+        .portfolioCard {
+          font-size: 0.835rem;
+            .detail {
+              padding-left: 1.4rem;
+              text-align: justify;
+            }
+        }
+      }
+  }
+}
+
+// @media only screen and (max-width: 580px) {
+// #about {
+//   .profile-img {
+//     width: 40%;
+//   }
+//   h4 {
+//     font-size: 23px;
+//   }
+//
+//
+// }
+//
+//
+// }
+
+
+
+@media only screen and (max-width: 479px) {
+#about.py-5 {
+  height: 100vh;
+
+  // remove margin for the d-none p
+  div > div > div.row.text-center.m-1 > div > div > p:nth-child(2) {
+    margin: 0;
+  }
+
+  //remove padding
+  div > div > div.row.text-center.m-1 > div > div {
+    padding:0;
+  }
+
+  h2{
+    font-size: 1.1rem;
+  }
+  .col.text-center.mb-5{
+   margin-bottom: 3%!important;
+  }
+
+  p.lead {
+    margin-bottom: 0.3rem!important;
+  }
+
+  .profile-img {
+    width: 40%;
+  }
+  h4 {
+    font-size: 1.09rem;
+  }
+  p.lead {
+    font-size: 0.95rem;
+    line-height: 1.3rem;
+    margin-top: 0.7rem;
+  }
+
+
+}
+
+#portfolio {
+  #accordion {
+    .portfolioCard {
+      font-size: 0.9rem;
+      padding: 0!important;
+      margin: 0!important;
+      .stackUsed > .title {
+        font-size: 0.85rem;
+      }
+    }
+  }
+
+}
+#contact{
+  height: 90vh;
+}
+}

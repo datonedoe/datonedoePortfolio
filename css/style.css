@@ -1,0 +1,251 @@
+span {
+  white-space: nowrap; }
+
+.text-primary {
+  color: #FFFFFF !important; }
+
+.navbar {
+  border-bottom: 1px rgba(0, 150, 136, 0.1) solid; }
+  .navbar .navbar-toggler-icon {
+    color: #CFD8DC !important; }
+  .navbar .navbar-brand {
+    color: #619896; }
+  .navbar .navbar-nav {
+    color: #BDBDBD; }
+    .navbar .navbar-nav .nav-item {
+      margin: 0 10px; }
+    .navbar .navbar-nav .nav-item:hover a {
+      color: rgba(0, 150, 136, 0.7) !important; }
+    .navbar .navbar-nav .active a {
+      color: #009688 !important; }
+
+section#landing .landingBackground {
+  background: url("../img/landing3.jpg");
+  background-size: cover;
+  background-position: center;
+  margin-top: 0vh;
+  height: 100vh; }
+
+section#about {
+  background: linear-gradient(rgba(33, 33, 33, 0.8), rgba(33, 33, 33, 0.4)), url("https://images.unsplash.com/photo-1476067897447-d0c5df27b5df?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max&s=8bcead9a8059ff3433e96c780d1b2143");
+  background-size: cover;
+  background-attachment: fixed;
+  color: #BDBDBD; }
+  section#about h2 {
+    color: #FFFFFF; }
+  section#about .intro {
+    letter-spacing: 0.06rem;
+    line-height: 1.8rem; }
+  section#about li {
+    display: inline-block;
+    padding: 0 2%;
+    font-size: 180%; }
+    section#about li .fa {
+      color: #607D8B;
+      transition: color 0.2s, font-size 0.3s; }
+    section#about li .fa:hover {
+      color: #BDBDBD;
+      font-size: 2.1rem; }
+
+.navbar {
+  background-color: #212121 !important; }
+
+section#portfolio {
+  background: linear-gradient(rgba(69, 90, 100, 0.9), rgba(33, 33, 33, 0.9)), url("../img/circuit2.png");
+  background-repeat: repeat;
+  position: relative; }
+  section#portfolio img {
+    cursor: pointer; }
+  section#portfolio h2 {
+    color: #CFD8DC;
+    letter-spacing: 0.2rem; }
+  section#portfolio h5 {
+    color: #CFD8DC; }
+  section#portfolio .work-row {
+    border-radius: 0.4rem;
+    background-color: rgba(69, 90, 100, 0.95);
+    color: #CFD8DC; }
+    section#portfolio .work-row .content {
+      padding: 1% 3% 2% 3%; }
+      section#portfolio .work-row .content .intro {
+        letter-spacing: 0.01rem; }
+      section#portfolio .work-row .content .read-more {
+        font-size: 70%;
+        font-weight: bold;
+        cursor: pointer;
+        color: #212121; }
+    section#portfolio .work-row .portfolioCard {
+      font-size: 0.9rem; }
+      section#portfolio .work-row .portfolioCard .title {
+        color: #94a8b1;
+        font-weight: 600; }
+      section#portfolio .work-row .portfolioCard .detail {
+        text-align: justify; }
+      section#portfolio .work-row .portfolioCard .demo .detail a {
+        color: #009688;
+        padding-left: 0.5rem;
+        padding-right: 0.5rem; }
+      section#portfolio .work-row .portfolioCard .demo .detail a:hover {
+        font-weight: bold;
+        text-decoration: none; }
+  section#portfolio .work-row:nth-child(even) {
+    background: rgba(57, 74, 82, 0.92);
+    color: #CFD8DC; }
+
+section#resume {
+  color: #CFD8DC;
+  background-color: #455A64; }
+  section#resume #downloadBtn {
+    color: #009688;
+    border-color: #009688;
+    font-size: 0.86rem;
+    letter-spacing: 0.019rem; }
+  section#resume #downloadBtn:hover {
+    background: rgba(96, 125, 139, 0.1); }
+  section#resume #downloadBtn:focus {
+    outline: none;
+    background: rgba(96, 125, 139, 0.1);
+    box-shadow: none; }
+  section#resume h4 {
+    letter-spacing: 0.04rem; }
+  section#resume .h6 {
+    letter-spacing: 0.04rem; }
+  section#resume li {
+    letter-spacing: 0.04rem; }
+  section#resume p {
+    margin: 0; }
+  section#resume #leftSide #educationCard {
+    border-bottom: 1px solid rgba(96, 125, 139, 0.1); }
+    section#resume #leftSide #educationCard #collegeCard p {
+      letter-spacing: 0.026rem; }
+    section#resume #leftSide #educationCard #extraClassCard ul {
+      margin: 0; }
+      section#resume #leftSide #educationCard #extraClassCard ul li {
+        list-style: none; }
+  section#resume #leftSide #skillsetCard .skill-list {
+    padding: 0; }
+    section#resume #leftSide #skillsetCard .skill-list .progress {
+      border-radius: 0.1em;
+      margin-bottom: 4px;
+      background-color: #41555e; }
+      section#resume #leftSide #skillsetCard .skill-list .progress .progress-bar {
+        justify-content: flex-end;
+        padding-right: 9px; }
+    section#resume #leftSide #skillsetCard .skill-list .progress:nth-child(even) .progress-bar {
+      background-color: #607D8B;
+      color: rgba(207, 216, 220, 0.6); }
+    section#resume #leftSide #skillsetCard .skill-list .progress:nth-child(odd) .progress-bar {
+      background-color: rgba(96, 125, 139, 0.5);
+      color: rgba(207, 216, 220, 0.6); }
+  section#resume #leftSide #skillsetCard #extraStuff li {
+    list-style: none;
+    display: inline-block;
+    padding-right: 0.7rem; }
+  section#resume #work-experience {
+    padding-left: 0.4rem;
+    border-left: 1px rgba(189, 189, 189, 0.08) solid; }
+    section#resume #work-experience .job-card {
+      border: 1px solid rgba(96, 125, 139, 0.18);
+      border-radius: 0.3em; }
+      section#resume #work-experience .job-card .company {
+        letter-spacing: 0.08rem;
+        font-weight: 600;
+        font-size: 1.1rem; }
+      section#resume #work-experience .job-card .position {
+        font-size: 0.95rem;
+        letter-spacing: 0.05rem; }
+      section#resume #work-experience .job-card ul {
+        padding-left: 1rem;
+        margin-bottom: 0; }
+        section#resume #work-experience .job-card ul li {
+          list-style: none;
+          letter-spacing: 0.014rem;
+          padding-top: 0.2rem; }
+
+footer {
+  padding: 1% 0;
+  background-color: #212121;
+  color: #455A64; }
+
+section#contact {
+  background: linear-gradient(-90deg, rgba(69, 90, 100, 0.77) 30%, rgba(33, 33, 33, 0.63) 70%), url("../img/contact-background.jpg");
+  background-attachment: fixed;
+  background-size: cover;
+  color: #BDBDBD; }
+  section#contact .contact-form .form-control {
+    background-color: rgba(69, 90, 100, 0.9) !important;
+    color: #CFD8DC;
+    outline: none;
+    border: 0; }
+  section#contact .contact-form .form-control:focus,
+  section#contact .contact-form .form-control:visited,
+  section#contact .contact-form .form-control:hover,
+  section#contact .contact-form .form-control:active {
+    border: 0;
+    outline: none;
+    box-shadow: none; }
+  section#contact .contact-form .btn-primary {
+    background-color: rgba(54, 71, 79, 0.9);
+    border: none; }
+  section#contact .contact-form .btn-primary:hover {
+    cursor: pointer;
+    background-color: #009688;
+    border: none; }
+  section#contact li {
+    list-style: none;
+    display: inline-block;
+    padding: 0.3rem; }
+    section#contact li .fa {
+      color: #CFD8DC;
+      font-size: 1.4rem;
+      transition: color 0.3s; }
+    section#contact li .fa:hover {
+      color: #009688;
+      font-size: 1.4rem; }
+  section#contact .email a {
+    color: #CFD8DC;
+    transition: color 0.3s; }
+  section#contact .email a:hover {
+    color: #009688;
+    text-decoration: none; }
+
+@media only screen and (max-width: 767px) {
+  #resume #work-experience {
+    padding-top: 1rem !important;
+    border-top: 1px solid rgba(96, 125, 139, 0.1) !important;
+    border-left: none !important; }
+  #portfolio #accordion .portfolioCard {
+    font-size: 0.835rem; }
+    #portfolio #accordion .portfolioCard .detail {
+      padding-left: 1.4rem;
+      text-align: justify; } }
+
+@media only screen and (max-width: 479px) {
+  #about.py-5 {
+    height: 100vh; }
+    #about.py-5 div > div > div.row.text-center.m-1 > div > div > p:nth-child(2) {
+      margin: 0; }
+    #about.py-5 div > div > div.row.text-center.m-1 > div > div {
+      padding: 0; }
+    #about.py-5 h2 {
+      font-size: 1.1rem; }
+    #about.py-5 .col.text-center.mb-5 {
+      margin-bottom: 3% !important; }
+    #about.py-5 p.lead {
+      margin-bottom: 0.3rem !important; }
+    #about.py-5 .profile-img {
+      width: 40%; }
+    #about.py-5 h4 {
+      font-size: 1.09rem; }
+    #about.py-5 p.lead {
+      font-size: 0.95rem;
+      line-height: 1.3rem;
+      margin-top: 0.7rem; }
+  #portfolio #accordion .portfolioCard {
+    font-size: 0.9rem;
+    padding: 0 !important;
+    margin: 0 !important; }
+    #portfolio #accordion .portfolioCard .stackUsed > .title {
+      font-size: 0.85rem; }
+  #contact {
+    height: 90vh; } }
